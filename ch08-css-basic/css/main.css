@@ -11,4 +11,4 @@ h2{color: blue;
 p.c{font-size: 60px;color: #000;}
 h2.c{color: lime;}
 p.a.b{color: gold;background-color: #000;}
-.box h2{background-color: gray;}
+div.box>h2{background-color: gray;}
