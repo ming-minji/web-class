@@ -1,0 +1,73 @@
+*{
+    margin: 0px; padding: 0px;
+}
+
+html{
+    font-family: 'Pretendard' ,sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.pul{
+    font-family: "풀무원";
+}
+
+.banner{
+    height: 250px;
+    background: url(../img/sub_vis01_02.jpg) no-repeat 50% 50% / cover;
+    margin-bottom: 50px;
+}
+
+main{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+main h1{
+    margin-bottom: 100px;
+    font-weight: 400;
+    font-size: 30px;
+    background: url(../img/sub_tit_line.gif) repeat-x 0 50%;
+}
+
+main h1 span{
+    background-color: white;
+    padding-right: 20px;
+}
+
+main h2{
+    font-size: 52px;
+    text-align: center;
+    padding: 0 70px;
+    margin-bottom: 50px;
+}
+
+main h2 em{
+    font-style: initial;
+    color: #7eae4b
+}
+
+.content{
+    width: 630px;
+    box-sizing: border-box;
+    padding: 40 90 50 90;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.content h3{
+    font-size: 35px;
+    margin-bottom: 25px;
+}
+
+/* .content h3+p{} */
+/* 또는 p태그에 각각 아이디 설정하면 됨 */
+.content p:nth-of-type(1){
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
