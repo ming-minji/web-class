@@ -1,0 +1,56 @@
+html{
+    font-size: 20px;
+    font-family: 'Pretendard',sans-serif;
+}
+
+.inner-frame{
+    width: 1440px;
+    margin: 0 auto;
+    margin-top: 3.75rem;
+    text-align: center;
+}
+
+.inner-frame h1{
+    font-weight: 900;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    line-height: 1;
+    /* 1은 100%를 축약한 것 */
+}
+
+.desc{
+    margin-bottom: 5rem;
+    line-height: 140%;
+    /* font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase; */
+}
+
+.banner{
+    height: 441px;
+    background: url(../image/가게.jpg) no-repeat 50% 50% / cover;
+    margin-bottom: 5rem;
+}
+
+.inner-frame h2{
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 1.5rem;
+    line-height: 100%;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.values li{
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 100%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.values li:last-of-type{
+    margin-bottom: 0;
+}
