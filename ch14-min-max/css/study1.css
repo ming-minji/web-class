@@ -1,0 +1,41 @@
+.a{
+    border: 1px solid red;
+    max-width: 800px;
+    min-width: 300px;
+}
+
+p span{
+    border: 5px solid blue;
+    display: inline-block;
+    min-width: 200px;
+}
+
+.b{
+    border: 5px solid orange;
+    min-height: 100px;
+    /* max-height: 200px; */
+    overflow: auto;
+}
+
+.c{
+    border: 5px solid green;
+    width: 10vw;
+    height: 10vw;
+    margin-top: 100vh;
+    overflow: hidden;
+}
+
+.d{
+    border: 5px solid pink;
+    width: 600px;
+    min-height: 600px;
+}
+
+.f{
+    border: 5px solid red;
+    width: 50%;
+    height: 50%;
+    /* 부모태그한테 적용된 600px의 50%니깐 300px이 적용되는 것 */
+    /* 부모태그의 height 값은 명시가 안 되어있지만 auto로 되어있고 최솟값 높이가 600px로 설정되어 있어서 height 50%는 계산이 안 됨 */
+}
+
