@@ -71,3 +71,47 @@
     width: 100px;
     height: 100px;
 }
+
+
+
+.box5{
+    width: 800px;
+    height: 300px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.box5 div{
+    width: 100px;
+    height: 100px;
+}
+
+
+
+.box6{
+    width: 800px;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box6 div{
+    width: 400px;
+    /* height: 100px; 해도 되고 안해도 되고*/
+}
+
+
+
+.box7{
+    width: 800px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box7 div{
+    height: 100px;
+    width: 100px;
+}
