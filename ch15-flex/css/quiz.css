@@ -6,7 +6,10 @@
 .d{background-color: gold;}
 .e{background-color: pink;}
 
-.box{background-color: lightgray;}
+.box{
+    background-color: lightgray;
+    margin-bottom: 200px;
+}
 
 .box1{
     width: 800px;
@@ -115,3 +118,147 @@
     height: 100px;
     width: 100px;
 }
+
+
+
+.box8{
+    width: 800px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box8 div{
+    width: 100px;
+    height: 100px;
+}
+
+.box8 section{
+    display: flex;
+}
+
+.box8-1{
+    display: flex;
+}
+
+.box8-2{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+
+
+.box9{
+    width: 800px;
+    height: 300px;
+    display: flex;
+}
+
+.box9-1{
+    display: flex;
+    width: 500px;
+}
+
+.box9-1 div{
+    /* display: flex;
+    width: 250px;
+    height: 300px; 또는 */
+    flex: 1;
+}
+
+.box9-2 div{
+    width: 300px;
+    height: 100px;
+}
+
+
+
+.box10{
+    width: 800px;
+    height: 300px;
+    display: flex;
+}
+
+
+.box10-1{
+    width: 250px;
+}
+
+.box10-2{
+    width: 300px;
+}
+
+.box10-3{
+    width: 250px;
+}
+
+.box10 .c{
+    height: 100px;
+}
+
+.box10-2-1{
+    display: flex;
+}
+
+.box10-2-1 div{
+    /* width: 150px; 또는 */ 
+    flex: 1;
+    height: 200px;
+}
+
+
+.box11{
+    width: 800px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box11 section{
+    width: 200px;
+}
+
+.box11 .a,
+.box11 .b{
+    height: 100px;
+}
+
+.box11 .c,
+.box11 .d{
+    width: 100px;
+    height: 100px;
+    display: flex;
+}
+
+.box11-2{
+    display: flex;
+}
+
+.box11 .e{
+    height: 100%;
+}
+
+
+
+.box12{
+    width: 800px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box12 .e{
+    width: 400px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box12 .e div{
+    width: 100px;
+    height: 100px;
+}
+
