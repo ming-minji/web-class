@@ -1,0 +1,101 @@
+.abo{
+  font-family: "Aboreto", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+html{
+    font-family: 'Pretendard',sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0 160px;
+}
+
+.banner{
+    border: 1px solid green;
+    background: url(../img/banner.jpg) no-repeat 0 0;
+    height: 599px;
+    border-radius: 2.5rem;
+}
+
+.banner h1{
+    border: 1px solid red;
+    color: #FFF;
+    font-size: 2.5rem;
+    line-height: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 270px;
+}
+
+.common-frame{
+    border: 1px solid #000;
+    margin-top: 120px;
+}
+
+.common-frame h2{
+    border: 1px solid red;
+    font-size: 7.5rem;
+    line-height: 90%;
+    text-transform: uppercase;
+}
+
+.common-frame p{
+    border: 1px solid pink;
+    line-height: 140%;
+    text-transform: uppercase;
+    margin: 48px 0;
+}
+
+.cafe-gal{
+    border: 1px solid yellow;
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 20px;
+}
+
+
+.cafe-gal figure{
+    flex: 1;
+    aspect-ratio: 520/434;
+}
+
+.cafe-gal figure img{
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.common-frame h3{
+    font-size: 2rem;
+    line-height: 140%;
+    text-align: center;
+}
+
+.common-frame h3+p{
+    font-size: 1rem;
+    line-height: 140%;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.cafe-gal2{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 6rem;
+}
+
+.cafe-gal2 figure{
+    flex: 1;
+    aspect-ratio: 790/434;
+}
+
+.cafe-gal2 figure img{
+     max-width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+}

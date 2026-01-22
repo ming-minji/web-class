@@ -12,8 +12,12 @@ a{
     text-decoration: inherit;
 }
 
-address{
+em, address, i{
     font-style: inherit;
+}
+
+strong, b{
+    font-size: inherit;
 }
 
 ul, ol{
