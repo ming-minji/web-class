@@ -1,5 +1,5 @@
-.abo{
-  font-family: "Aboreto", system-ui;
+.stp1{
+  font-family: "아보", system-ui;
   font-weight: 400;
   font-style: normal;
 }
@@ -8,94 +8,90 @@ html{
     font-family: 'Pretendard',sans-serif;
     font-size: 20px;
     font-weight: 400;
-    margin: 0 160px;
+}
+
+
+.common-frame{
+    width: 1600px;
+    margin: 0 auto;
+    padding-top: 6rem;
 }
 
 .banner{
-    border: 1px solid green;
-    background: url(../img/banner.jpg) no-repeat 0 0;
     height: 599px;
     border-radius: 2.5rem;
+    background: url(../img/banner.jpg) no-repeat 50% 50% / cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .banner h1{
-    border: 1px solid red;
     color: #FFF;
     font-size: 2.5rem;
     line-height: 100%;
     text-transform: uppercase;
-    text-align: center;
-    padding-top: 270px;
-}
-
-.common-frame{
-    border: 1px solid #000;
-    margin-top: 120px;
 }
 
 .common-frame h2{
-    border: 1px solid red;
     font-size: 7.5rem;
     line-height: 90%;
     text-transform: uppercase;
+    margin-top: 6rem;
 }
 
-.common-frame p{
-    border: 1px solid pink;
+.desc1{
     line-height: 140%;
     text-transform: uppercase;
-    margin: 48px 0;
+    margin: 2.4rem 0;
 }
 
-.cafe-gal{
-    border: 1px solid yellow;
+.gallery{
     display: flex;
     gap: 1rem;
-    margin-bottom: 20px;
+    margin-bottom: 1rem;
 }
 
 
-.cafe-gal figure{
+.gallery figure{
     flex: 1;
     aspect-ratio: 520/434;
 }
 
-.cafe-gal figure img{
-    max-width: 100%;
+.gallery figure img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 1rem;
 }
 
-.common-frame h3{
+.stp1{
     font-size: 2rem;
     line-height: 140%;
     text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
 }
 
-.common-frame h3+p{
-    font-size: 1rem;
+.desc2{
     line-height: 140%;
     text-align: center;
     text-transform: capitalize;
+    margin-bottom: 2rem;
 }
 
-.cafe-gal2{
+/* .gallery2{
     display: flex;
     gap: 1rem;
     margin-bottom: 6rem;
-}
+}  이렇게 해도 되고 아니면 어차피 위에 썼던거랑 조금 수정해서 복붙하니깐 밑에처럼 쓰면 간단하고 좋음*/ 
 
-.cafe-gal2 figure{
+.gallery.type2 figure{
     flex: 1;
     aspect-ratio: 790/434;
 }
 
-.cafe-gal2 figure img{
-     max-width: 100%;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 1rem;
+
+.wrap{
+    background: url(../img/bg.png) no-repeat 50% 0% / 100% auto;
 }
