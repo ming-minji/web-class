@@ -5,7 +5,7 @@ html{
 }
 
 header{  
-    /* 헤더에는 줄 게 없음 */
+    border-bottom: 2px solid #BE0707;
 }
 
 .common-frame{
