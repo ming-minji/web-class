@@ -1,44 +1,43 @@
-.stp1{
-  font-family: "아보", system-ui;
-  font-weight: 400;
-  font-style: normal;
-}
-
 html{
     font-family: 'Pretendard',sans-serif;
     font-size: 20px;
     font-weight: 600;
 }
 
-
+header{  
+    /* 헤더에는 줄 게 없음 */
+}
 
 .common-frame{
-    /* border: 1px solid red; */
     width: 1600px;
-    height: 5rem;
     margin: 0 auto;
+}
+
+header .common-frame{  /* 따로 분리해서 만들어주면 좋음 */
     display: flex;
     justify-content: space-between;
 }
 
-.common-frame .gnb{
-    /* border: 1px solid blue; */
+.gnb{
     display: flex;
-    width: 866px;
-    justify-content: center;
-    align-items: center;
 }
 
-.common-frame .gnb>li{
-    flex-grow: 1;
+.gnb li{ 
+    /* 줄 거 없음 */
+}
+
+.gnb a{
+    height: 100%;
+    /* height: 100%;만 주면 안 늘어남 / a태그가 인라인스타일이라서 안 됨*/
+    display: flex;
+    /* a태그의 자식태그는 텍스트임. 그래서 텍스트 박스의 크기가 커져야 하기에 부모태그인 a태그한테 flex를 하는 것 */
+    align-items: center;
+    padding: 0 1rem;
+    font-weight: 600;
     line-height: 100%;
     text-align: center;
-    vertical-align: middle;
     text-transform: uppercase;
-    list-style: none;
-    
 }
-
 
 .banner{
     background: url(../img/banner.jpg) no-repeat 50% 50% / cover;
@@ -50,10 +49,8 @@ html{
 
 .banner h1{
     color: #fff;
-    font-weight: 400;
     font-size: 7.5rem;
     line-height: 100%;
     text-align: center;
-    vertical-align: middle;
     text-transform: uppercase;
 }
