@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.a{background-color: red;}
+.b{background-color: green;}
+.c{background-color: blue;}
+.d{background-color: gold;}
+.e{background-color: pink;}
+
+.ex1{
+    position: relative;
+}
+
+.box{
+    background-color: gray;
+    width: 800px;
+    height: 300px;
+    margin: 500px auto;
+}
+
+.ex1>div{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+.ex1 .a{
+    left: 0;
+    top:  0;
+}
+
+.ex1 .b{
+    left: 0;
+    bottom: 0; /*아니면 top:200px 줘도 됨*/
+}
+
+.ex1 .d{
+    right: 0;
+    top: 0;
+}
+
+.ex1 .e{
+    right: 0;
+    bottom: 0;
+}
+
+.ex1 .c{
+    left: calc(50% - 50px);
+    top: calc(50% - 50px);
+}
+
+
+
+
+
+
+.ex2{
+    position: relative;
+}
+
+.ex2>div{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+.ex2 .a{
+    left: -100px;
+    top: -100px;
+}
+
+.ex2 .b{
+    left: -100px;
+    bottom: -100px;
+}
+
+.ex2 .c{
+    left: calc(50% - 50px);
+    /* top: 100%; */
+    bottom: -100px;
+}
+
+.ex2 .d{
+    right: -100px;
+    top: -100px;
+}
+
+.ex2 .e{
+    right: -100px;
+    bottom: -100px;
+}
+
+
+
+
+.ex3{
+    position: relative;
+}
+
+.ex3>div{
+    width: 20%;
+    height: 100%;
+    position: absolute;
+}
+
+.ex3 .a{
+    left: 0;
+    top: -300px;
+}
+
+.ex3 .b{
+    left: 20%;
+    bottom: -100%;
+}
+
+.ex3 .c{
+    left: 40%;
+    top: -100%;
+}
+
+.ex3 .d{
+    left: 60%;
+    bottom: -100%;
+}
+
+.ex3 .e{
+    left: 80%;
+    top: -100%;
+}
+
+
+
+
+
+/* ex4 쌤은 다르게 하긴 함 이건 내가 한 거 */
+.ex4{
+    position: relative;
+}
+
+
+.ex4 section{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+}
+
+.ex4 section>div{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+
+.ex4 .a{
+    left: 0;
+    top: -50%;
+}
+
+.ex4 .b{
+    right: 0;
+    bottom: 0;
+}
+
+.ex4 .c{
+    right: 0;
+    top: 0;
+}
+
+.ex4 .d{
+    right: 0;
+    bottom: -50%;
+}
+
+.ex4 .e{
+    left: calc(50% - 50px);
+    top: calc(50% - 50px);
+}
