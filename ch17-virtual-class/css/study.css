@@ -1,0 +1,66 @@
+.a{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transition: 1s; /* 얘는 전환이라는 속성이라서 반드시 본태그에 적용해야함 */
+}
+
+/* a클래스인데 마우스가 올려진 a클래스임 */
+.a:hover{
+    background-color: blue;
+    width: 200px;
+    font-size: 2rem;
+}
+
+
+.b{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+}
+
+.b:active{
+    background-color: #000;
+    color: #fff;
+
+}
+
+.box{
+    background-color: aquamarine;
+    width: 300px;
+    height: 300px;
+}
+
+.c{
+    background-color: rebeccapurple;
+    width: 100px;
+    height: 100px;
+}
+
+.box .c:hover{ /* box클래스 안의 c클래스에 마우스를 올리면 */
+    font-size: 2rem;
+}
+
+.box:hover .c{ /* 마우스가 올려진 box클래스 안의 c클래스를 선택 */
+    background-color: gold;
+}
+
+
+.d::before{ /* before 사용 시 첫번째 자식태그로 됨 */
+    content: "추가된 내용1";
+    border: 1px solid blue;
+    display: block;
+    width: 200px;
+    height: 200px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.d::after{
+    content: "추가된 내용2";
+    background-color: red;
+    display: block;
+    width: 100px;
+    height: 100px;
+}
