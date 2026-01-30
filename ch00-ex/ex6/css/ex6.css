@@ -45,6 +45,7 @@ header .common-frame{  /* 따로 분리해서 만들어주면 좋음 */
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 6rem;
 }
 
 .banner h1{
@@ -54,3 +55,4 @@ header .common-frame{  /* 따로 분리해서 만들어주면 좋음 */
     text-align: center;
     text-transform: uppercase;
 }
+

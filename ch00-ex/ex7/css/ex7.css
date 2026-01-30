@@ -1,0 +1,104 @@
+html{
+    font-family: 'Pretendard',sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+
+header{
+    border: 1px solid red;
+    position: fixed;
+}
+
+.common-frame{
+    border: 1px solid blue;
+    width: 1600px;
+    margin: 0 auto;
+    position: relative;
+    left: 160px;
+}
+
+header .common-frame{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav{
+    border: 3px solid gold;
+}
+
+.lnb{
+    border: 2px solid coral;
+    display: flex;
+}
+
+.lnb a{
+    color: #fff;
+    align-items: flex-start;
+    padding: 0 1rem;
+    font-size: 16px;
+    line-height: 100%;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+.gnb{
+    border: 2px solid green;
+    display: flex;
+    height: 70%;
+}
+
+.gnb a{
+    color: #fff;
+    height: 100%;
+    padding: 0 1rem;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 100%;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+
+.banner{
+    background: url(../img/banner.jpg) no-repeat 50% 48% / cover;
+    height: 963px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner h1{
+    border: 1px solid blue;
+    color: #fff;
+    width: 1600px;
+    font-size: 7rem;
+    line-height: 90%;
+    text-transform: uppercase;
+
+}
+
+h2{
+    margin-top: 6rem;
+    font-size: 3rem;
+    line-height: 100%;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+p{
+    line-height: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 1rem;
+}
+
+.banner2{
+    background: url(../img/cafe.jpg) no-repeat 50% 55% / cover;
+    height: 441px;
+    margin-top: 4rem;
+}
