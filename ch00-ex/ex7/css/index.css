@@ -1,22 +1,20 @@
 html{
-    font-family: 'Pretendard',sans-serif;
+    font-family: 'Pretendard', sans-serif;
     font-size: 20px;
     font-weight: 400;
 }
 
 
-
 header{
-    border: 1px solid red;
+    border-bottom: 2px solid #BE0707;
     position: fixed;
+    width: 1920px;
 }
 
 .common-frame{
     border: 1px solid blue;
     width: 1600px;
     margin: 0 auto;
-    position: relative;
-    left: 160px;
 }
 
 header .common-frame{
@@ -25,80 +23,89 @@ header .common-frame{
 }
 
 .nav{
-    border: 3px solid gold;
+    border: 1px solid greenyellow;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
 }
 
 .lnb{
-    /* border: 2px solid coral; */
+    border: 1px solid brown;
     display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    height: 30px;
 }
 
 .lnb a{
-    color: #fff;
-    align-items: flex-start;
-    padding: 0 1rem;
+    display: flex;
     font-size: 16px;
     line-height: 100%;
     text-align: center;
     text-transform: uppercase;
-
 }
 
 .gnb{
-    border: 2px solid green;
+    height: 70px;
+    border: 1px solid purple;
     display: flex;
-    height: 70%;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .gnb a{
-    color: #fff;
-    height: 100%;
-    padding: 0 1rem;
+    display: flex;
     font-weight: 600;
     font-size: 18px;
     line-height: 100%;
     text-align: center;
     text-transform: uppercase;
-
+    padding: 0 1rem;
 }
 
 
 .hero-banner{
-    background: url(../img/hero-banner.jpg) no-repeat 50% 48% / cover;
+    background: url(../img/hero-banner.jpg) no-repeat 50% 50% / cover;
     height: 963px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.hero-banner>h1{
-    /* border: 1px solid blue; */
+h1{
+    border: 1px solid coral;
     color: #fff;
-    width: 1600px;
     font-size: 7rem;
     line-height: 90%;
     text-transform: uppercase;
-
 }
 
 h2{
+    border: 1px solid red;
     margin-top: 6rem;
     font-size: 3rem;
     line-height: 100%;
     text-align: center;
     text-transform: uppercase;
-
+    margin-bottom: 1rem;
 }
 
 p{
+    font-size: 1rem;
     line-height: 100%;
     text-align: center;
     text-transform: uppercase;
-    margin-top: 1rem;
+    margin-bottom: 4rem;
 }
 
-.banner2{
-    background: url(../img/banner.jpg) no-repeat 50% 55% / cover;
+.banner{
+    background: url(../img/banner.jpg) no-repeat 50% 50% / cover;
     height: 441px;
-    margin-top: 4rem;
+    margin-bottom: 155px;
+}
+
+.a{
+    width: 1600px;
+    margin: 0 auto;
 }
