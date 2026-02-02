@@ -22,14 +22,12 @@ html{
 }
 
 .common-frame{
-    border: 1px solid red;
     width: 1600px;
     height: 1320px;
     margin: 0 auto;
 }
 
 h2.deco-title {
-    border: 1px solid blue;
     font-size: 7.5rem;
     line-height: 90%;
     text-transform: uppercase;

@@ -1,0 +1,82 @@
+.box{
+    border: 5px solid #000;
+    width: 300px;
+    height: 300px;
+    margin: 200px auto;
+    transition: all 1s ease 0s;
+}
+
+.a{background-color: red;}
+.a:hover{
+    transform: translateX(-50%); /* 가로로 도형 크기의 절반 움직이는 것 */
+}
+
+.b{background-color: blue;}
+.b:hover{
+    transform: translateY(-50%); /* 세로로 도형 크기에서 조건을 준 만큼 움직임 */
+}
+
+.c{background-color: orange;}
+.c:hover{
+    transform:
+    translateX(100px)
+    translateY(-100px);
+}
+
+
+.parent{
+    background-color: #eee;
+    height: 700px;
+    perspective: 1000px; /*  앞 뒤의 공간이 설정한 숫자의 px만큼 생긴 것 */
+    perspective-origin: 50% 50%;
+}
+.d{background-color: green;}
+/* 움직이는 기준은 가운데 센터(소실점)를 기준으로 함 (좌표: 50% 50%) 좌표는 변경 가능함 */
+.parent:hover .d{
+    transform: translateZ(500px); /* 도형이 위로 올라간 게 아니라 앞으로 나오는 것 */
+}
+
+
+.e{
+    background-color: coral;
+    transform-origin: 50% 50%; /* 얘도 50% 50%이 기본값임 px로 써도 됨 */
+}
+.e:hover{
+    transform: rotate(360deg); /*회전-> +일땐 시계방향, -일땐 반시계방향*/
+}
+
+
+.f{background-color: darkgoldenrod;}
+.f:hover{
+    transform: rotateX(180deg);
+}
+
+.g{background-color: salmon;}
+.g:hover{
+    transform: rotateY(180deg);
+}
+
+.h{background-color: darkcyan;}
+.h:hover{
+    transform: scaleX(200%); /* 가로방향으로 ~%만큼 늘리겠다 */
+}
+
+.i{background-color: chocolate;}
+.i:hover{
+    transform: scaleY(2); /* 200%를 2로 표현해도 됨 100%은 1 */
+}
+
+.j{background-color: hotpink;}
+.j:hover{
+    transform: scale(0.7); /*원래비율을 가지고 가되 가로세로 같이 줄어들고 늘어남*/
+}
+
+.k{background-color: gold;}
+.k:hover{
+    transform: skewX(30deg);
+}
+
+.l{background-color: violet;}
+.l{
+    transform: skewY(30deg);
+}

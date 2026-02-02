@@ -3,14 +3,30 @@
     padding: 0;
 }
 
-.a{background-color: red;}
-.b{background-color: green;}
-.c{background-color: blue;}
-.d{background-color: gold;}
-.e{background-color: pink;}
+.a{
+    background-color: red;
+    transition: all 1s ease 0s;
+}
+.b{
+    background-color: green;
+    transition: all 1s ease 0s;
+}
+.c{
+    background-color: blue;
+    transition: all 1s ease 0s;
+}
+.d{
+    background-color: gold;
+    transition: all 1s ease 0s;
+}
+.e{
+    background-color: pink;
+    transition: all 1s ease 0s;
+}
 
 .ex1{
     position: relative;
+    overflow: hidden;
 }
 
 .box{
@@ -31,9 +47,19 @@
     top:  0;
 }
 
+.ex1:hover .a{
+    left: -100px;
+    top: -100px;
+}
+
 .ex1 .b{
     left: 0;
     bottom: 0; /*아니면 top:200px 줘도 됨*/
+}
+
+.ex1:hover .b{
+    left: -100px;
+    bottom: -100px;
 }
 
 .ex1 .d{
@@ -41,9 +67,19 @@
     top: 0;
 }
 
+.ex1:hover .d{
+    right: -100px;
+    top: -100px;
+}
+
 .ex1 .e{
     right: 0;
     bottom: 0;
+}
+
+.ex1:hover .e{
+    right: -100px;
+    bottom: -100px;
 }
 
 .ex1 .c{
@@ -58,6 +94,7 @@
 
 .ex2{
     position: relative;
+    overflow: hidden;
 }
 
 .ex2>div{
@@ -71,9 +108,19 @@
     top: -100px;
 }
 
+.ex2:hover .a{
+    left: 0;
+    top: 0;
+}
+
 .ex2 .b{
     left: -100px;
     bottom: -100px;
+}
+
+.ex2:hover .b{
+    left: 0;
+    bottom: 0;
 }
 
 .ex2 .c{
@@ -82,9 +129,19 @@
     bottom: -100px;
 }
 
+.ex2:hover .c{
+    left: calc(50% - 50px);
+    bottom: calc(50% - 50px);
+}
+
 .ex2 .d{
     right: -100px;
     top: -100px;
+}
+
+.ex2:hover .d{
+    right: 0;
+    top: 0;
 }
 
 .ex2 .e{
@@ -92,7 +149,10 @@
     bottom: -100px;
 }
 
-
+.ex2:hover .e{
+    right: 0;
+    bottom: 0;
+}
 
 
 .ex3{
