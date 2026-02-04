@@ -3,7 +3,7 @@
     src: url(../font/Aboreto-Regular.ttf);
 }
 
-.stp1{
+.stp1{ /*subtypo1을 걍 내가 줄여서 씀*/
     font-family: "아보";
     font-weight: 400;
 }

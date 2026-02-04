@@ -24,7 +24,7 @@ a{
 }
 
 .gnb>li{
-    height: 50px;
+    max-height: 50px;
     overflow: hidden;
     transition: all 0.6s ease 0s;
 }
