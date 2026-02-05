@@ -1,0 +1,89 @@
+.box1{
+    border: 1px solid #000;
+    width: 200px;
+    height: 200px;
+    margin: 200px auto;
+    box-shadow: 10px 30px 10px blue;
+    /* 오른쪽 / 아래 / 뭉개지는 거(블러처리) / 그림자색 */
+}
+
+.box2{
+    border: 1px solid #000;
+    width: 200px;
+    height: 200px;
+    margin: 200px auto;
+    box-shadow: 
+    20px 20px 0px red,
+    -20px -20px 0 blue,
+    40px 40px 0 green;
+}
+
+.box3{
+    border: 1px solid #000;
+    width: 200px;
+    height: 200px;
+    margin: 200px auto;
+    box-shadow: 0px 0px 0px red;
+    transition: all 1s ease 0s;
+}
+
+.box3:hover{
+    box-shadow: 10px 10px 20px red;
+}
+
+
+.filter1 img{
+    filter: grayscale(1);
+    /* 0일땐 컬러 1일땐 색 빠지고 회색 0.5일 땐 반반*/
+    transition: all 1s ease 0s;
+}
+
+.filter1 img:hover{
+    filter: grayscale(0);
+}
+
+
+.filter2 img{
+    filter: brightness(0.4);
+    /* 명도조절임 -> 1은 원본값 0에 가까울 수록 어두워짐 */
+}
+
+.filter2 img:hover{
+    filter: brightness(1);
+}
+
+.filter3 img{
+    filter: blur(20px);
+    transition: all 1s ease 0s;
+}
+
+.filter3 img:hover{
+    filter: blur(0px);
+}
+
+.filter4 img{
+    filter: hue-rotate(180deg); /* 각각 픽섹들이 가지고 있는 색에서 180도 회전된 보색으로 변함 */
+    transition: all 1s ease 0s;
+
+}
+
+.filter4 img:hover{
+    filter: hue-rotate(0);
+}
+
+
+.bg{
+    background: linear-gradient(30deg, gold, darkgreen);
+}
+
+.blend1{
+    mix-blend-mode: color-burn;
+}
+
+.blend2{
+    mix-blend-mode: difference;
+}
+
+.blend3{
+    mix-blend-mode: overlay;
+}

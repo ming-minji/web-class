@@ -1,0 +1,38 @@
+.a{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    margin: 200px auto;
+    animation-name: myrotate;
+    animation-duration: 2s; /*몇 초동안 작동하는 지*/
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite; /* 몇 번 작동할 건지(infinite)는 무한 반복 */
+    animation-direction: normal;
+}
+
+.a:hover{
+    animation-play-state: paused; /* 마우스 올리면 멈춤 */
+}
+
+@keyframes myrotate {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+
+.b{
+    width: 100px;
+    height: 100px;
+    background-color: gold;
+    margin: 200px auto;
+    animation: bounce .9s ease 0s infinite normal;
+}
+
+@keyframes bounce {
+    0%{transform: scale(1);}
+    45.5%{
+        background-color: red;
+        border-radius: 50%;}
+    100%{transform: scale(2)};
+
+}
