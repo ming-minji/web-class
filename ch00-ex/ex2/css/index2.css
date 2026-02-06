@@ -1,65 +1,6 @@
-.aboreto{
-  font-family: "Aboreto", system-ui;
-  font-weight: 400;
-  font-style: normal;
-}
-
-
-html{
-    font-size: 1rem;
-    font-weight: 400;
-    font-family: 'Pretendard',sans-serif;
-}
-
-
-
-.banner{
-    height: 599px;
-    background: url(../image/banner.png) no-repeat 50% 50% / cover;
-}
-
-.banner h1{
-    font-size: 2.5rem;
-    line-height: 100%;
-    color: #ffffff;
-    text-transform: uppercase;
-    text-align: center;
-    padding-top: 270px;
-    /* 또는 .banner에다가 padding-top: 270px; 주고 box-sizing: border-box; 하면 됨 */
-}
-
-.content{
-    width: 1600px;
-    margin: 0 auto;
-    margin-top: 6rem;
-}
-
-.content h2{
-    font-size: 4rem;
-    line-height: 90%;
-    text-transform: uppercase;
-    margin-bottom: 4rem;
-}
-
-.content p{
-    border-top: 1px solid #000;
-    font-size: 1rem;
-    line-height: 140%;
-    text-align: right;
-    text-transform: uppercase;
-    padding: 1rem 0;
-    margin-bottom: 3rem;
-}
-
-.content figure img{
-    width: 1000px;
-    height: 430px;
-    object-fit: cover;
-    margin-bottom: 1rem;
-}
-
-.content figcaption{
-    line-height: 140%;
-    text-transform: lowercase;
+:root{
+    --base-pc:20px;
+    --base-pad:18px;
+    --base-mo:14px;
 }
 

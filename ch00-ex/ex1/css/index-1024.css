@@ -1,0 +1,11 @@
+@media (max-width:1024px){ /*1024px보다 작으면*/
+    html{
+        font-size: var(--base-pad); /* var은 배리어? */
+    }
+
+    .inner-frame {
+    width: auto;
+    margin: 0 2rem;
+    margin-top: 3.75rem;
+    }
+}

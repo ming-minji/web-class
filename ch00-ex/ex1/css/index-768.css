@@ -1,0 +1,11 @@
+@media (max-width:768px){ /* 768px보다 작으면 */
+    html{
+        font-size: var(--base-mo);
+    }
+
+    .inner-frame {
+    width: auto;
+    margin: 0 1rem;
+    margin-top: 3.75rem;
+    }
+}
