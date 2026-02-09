@@ -1,3 +1,10 @@
+.aboreto{
+        font-family: "Aboreto", system-ui;
+        font-weight: 400;
+        font-style: normal;
+}
+
+
 :root{
     --base-pc:20px;
     --base-pad:18px;

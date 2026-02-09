@@ -1,15 +1,9 @@
-@media(max-width:1920px){
+@media (max-width:1920px){
     
     html{
         font-size: var(--base-pc);
         font-weight: 400;
         font-family: 'Pretendard',sans-serif;
-    }
-
-    .aboreto{
-        font-family: "Aboreto", system-ui;
-        font-weight: 400;
-        font-style: normal;
     }
 
     .banner{
