@@ -30,7 +30,6 @@
 
     .common-frame{
         width: 1600px;
-        height: 1320px;
         margin: 0 auto;
     }
 
@@ -104,18 +103,49 @@
     html{
         font-size: var(--base-pad);
     }
-
-    .banner h1{
-        text-align: center;
-        color: #ffffff;
-        font-size: 2.5rem;
-        line-height: 100%;
-        text-transform: uppercase;
-    }
     
     .common-frame {
-        width: 100%;
-        height: auto;
+        width: auto;
         margin: 0 2rem;
+    }
+
+    .banner h1 {
+        font-size: 50px; 
+        /* rem으로 하면 각 pc, pad, mo의 크기가 지정되어 있어서 글씨크기가 다 달라지니깐 50px로 고정시켜버리기 무조건 rem을 사용하지 않음*/
+    }
+    
+    h2.deco-title {
+        font-size: 80px;
+        background: url(../img/Vector.svg) no-repeat 50% -22%;
+    }
+
+    .cafe-gal figure {
+    aspect-ratio: 1/1;
+    }
+}
+
+
+@media (max-width:768px){
+    html{
+        font-size: var(--base-mo);
+    }
+
+    .common-frame {
+        width: auto;
+        margin: 0 1rem;
+    }
+
+    h2.deco-title {
+        font-size: 50px;
+        background: url(../img/Vector.svg) no-repeat 50% -90%;
+    }
+
+    .cafe-gal {
+        flex-direction: column;
+    }
+
+    .cafe-gal figure {
+        aspect-ratio: 365/200;
+        height: 200px;
     }
 }
