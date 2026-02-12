@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>삼항연산자</title>
+</head>
+<body>
+    <script>
+        // 앞에 숫자들이 true면 ?뒤에 있는 a로 계산되고 false면 :뒤에 있는 b가 계산되는 것임
+        10>2 ? "A" : "B" // "A"
+        5<3?"가":"나" // "나"
+        10!=10?"다":"라" // "라"
+        20?"C":"D" // "C" -> 20이라는 숫자는 수가 있으니깐 true로 간주
+        !0?"E":"F" // "E"
+        30<20?"A":5==5?"C":"D" // "C"
+        let score = 40
+        score>=90?"A":score>=80?"B":score>=70?"C":"D"
+    </script>
+</body>
+</html>
