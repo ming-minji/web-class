@@ -1,10 +1,13 @@
-html{
-    font-family: 'Pretendard',sans-serif;
-    font-weight: 400;
-    font-size:20px;
+:root {
+    --base-pc:20px;
+    --base-pad:18px;
+    --base-mo:14px;
+    --base-widel:22px
 }
+
+
 .common-frame{
-    width:1600px;
+    width:auto;
     margin:0 auto;
 }
 .title{
@@ -80,4 +83,47 @@ html{
     -webkit-line-clamp: 2;         
     overflow: hidden;              
     text-overflow: ellipsis;
+}
+
+
+
+@media (max-width:1920px){
+    html{
+    font-size:var(--base-pc);
+    }
+}
+
+
+@media (max-width:1024px){
+    html{
+    font-size:var(--base-pad);
+    }
+
+    .common-frame {
+    width: auto;
+    margin: 0 2rem;
+    }
+
+    .banner h2 {
+    width: auto;
+    font-size: 80px;
+    }
+}
+
+
+@media (max-width:768px){
+    html{
+    font-size:var(--base-mo);
+    }
+
+    .common-frame {
+    width: auto;
+    margin: 0 1rem;
+    }
+
+    .gallery {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    }
 }
