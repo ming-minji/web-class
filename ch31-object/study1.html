@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object</title>
+</head>
+<body>
+    <h1>객체 - object</h1>
+    <p>자바스크립트에서 사물을 나타낼 때 사용하는 표현</p>
+    <p>그리고 각각의 프로퍼티는 :(클론)을 사용하여 key:value형태로 구성되어 있다.</p>
+    <p>여기서 key값을 사용하여 저장된 value값을 가져올 수 있다. key값은 객체 안에 속해있는 변수처럼 활용된다.</p>
+    <script>
+        let person1 = ["정현진","남자",50]
+        console.log(person1[0])
+        let person2 = {name:"정현진",gender:"남자",age:50} //name:"정현진" ->이거 자체를 프로퍼티라고 불림 / namer,gender,age 등 key라고 하고/ "정현진","남자",50 같은건 value임
+        console.log(person2["name"])
+        console.log(person2.name) // 위에보다 이걸 더 많이 사용
+        let person3 = {name:"장윤서",gender:"여자",age:27}
+        // person3.name[1] "윤"
+        // person3.gender,length-2?"A.?B" => "B"
+    </script>
+</body>
+</html>

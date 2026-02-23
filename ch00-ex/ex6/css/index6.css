@@ -1,8 +1,10 @@
-html{
-    font-family: 'Pretendard',sans-serif;
-    font-size: 20px;
-    font-weight: 600;
+:root {
+    --base-pc:20px;
+    --base-tab:18px;
+    --base-mo:14px;
 }
+
+
 
 header{  
     border-bottom: 2px solid #BE0707;
@@ -56,3 +58,34 @@ header .common-frame{  /* 따로 분리해서 만들어주면 좋음 */
     text-transform: uppercase;
 }
 
+
+@media (max-width:1920px){
+    html{
+        font-size: var(--base-pc);
+    }
+}
+@media (max-width:1024px){
+    html{
+        font-size: var(--base-tab);
+    }
+
+    .common-frame {
+        width: auto;
+        margin: 0 2rem;
+    }
+
+    .banner {
+        height: 600px;
+    }
+
+    .banner h1 {
+        font-size: 4.4rem;
+    }
+}
+
+
+@media (max-width:768px){
+    html{
+        font-size: var(--base-mo);
+    }
+}

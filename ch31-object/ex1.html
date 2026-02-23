@@ -15,24 +15,24 @@
             <script>
                 for(let i=0 ; i<class12th.length ; i++){document.write(`<li>
                 <figure>
-                    <img src="./img/${class12th[i][9]}" alt="${class12th[i][1]} 사진">
+                    <img src="./img/${class12th[i].uphoto}" alt="${class12th[i].uname} 사진">
                 </figure>
-                <h2>${class12th[i][1]}</h2>
+                <h2>${class12th[i].uname}</h2>
                 <dl> 
                     <dt>성별</dt>
-                    <dd>${class12th[i][2]}</dd>
+                    <dd>${class12th[i].ugender}</dd>
                     <dt>나이</dt>
-                    <dd>${class12th[i][3]}</dd>
+                    <dd>${class12th[i].uage}</dd>
                     <dt>띠</dt>
-                    <dd>${class12th[i][4]}</dd>
+                    <dd>${class12th[i].uzc}</dd>
                     <dt>mbti</dt>
-                    <dd>${class12th[i][5]}</dd>
+                    <dd>${class12th[i].umbti}</dd>
                     <dt>결혼여부</dt>
-                    <dd>${class12th[i][6]?"기혼":"미혼"}</dd>
+                    <dd>${class12th[i].umarried ? "기혼" : "미혼"}</dd>
                     <dt>취미</dt>
-                    <dd>${class12th[i][7]}</dd>
+                    <dd>${class12th[i].ulike}</dd>
                     <dt>좌우명</dt>
-                    <dd>${class12th[i][8]}</dd>
+                    <dd>${class12th[i].umotto}</dd>
                 </dl>
                 </li>`)}
                 
