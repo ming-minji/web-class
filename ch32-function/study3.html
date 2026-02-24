@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>값의 형태로 정의하는 함수</title>
+</head>
+<body>
+    <script>
+        a() //a는 어차피 첫 번째 순서라서 앞에다가 적어도 문제는 없음 / 다만, b랑 c는 앞에 적을 경우 선언이 안 되어있는 상태에서 실행시키는거라 에러가 뜸 (호이스팅 개념관련)
+        function a(){
+            alert("aaa");
+        }
+    
+        let b = function(){
+            alert("bbb")
+        } //익명함수(이름없는함수)
+        b()
+
+        let c = ()=>{
+            alert("ccc")
+        } //()=>{} '=>는 function이랑 같음' 
+        c()
+
+        function d(n1){
+            alert(n1)
+        }
+        d("ddd")
+
+        let e = function(n1){
+            alert(n1)
+        }
+        e("eee")
+
+        let f = n1=>{
+            alert(n1)
+        }
+        f("fff")
+
+        let g = (a,b)=>{
+            return a+b
+        }
+        // let g = (a,b)=>a+b => 위에 함수를 왼쪽처럼 한줄로 만들수도 있음
+
+        alert(g(1,3))
+    </script>
+
+
+    <h1>콜백함수</h1>
+    <script>
+        function aa(bb){
+            bb()
+        }
+        aa(function(){
+            alert("bb")
+        })
+
+
+        let cc = dd=>{
+            dd()
+        }
+        cc(()=>{
+            alert("dd")
+        })
+    </script>
+</body>
+</html>

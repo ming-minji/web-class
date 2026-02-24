@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수의 리턴</title>
+</head>
+<body>
+    <h1>함수 안에서 return 표현</h1>
+    <p>함수에서 return이라는 키워드를 만나면 그 즉시 함수는 종료되며, return키워드 오른쪽 값을 함수가 사용되었던 자리에 남긴다.</p>
+    <script>
+        function a(){
+            document.write("<h1>안녕하세요</h1>")
+            return "좋은아침"
+        } 
+        //a라는 함수를 실행해라! -> 다음에 return함수가 나오면서 즉시 종료됨, 아래에 나온 함수들 실행이 안되면서 해석 안 됨
+        let b = a() // <- 여기 a()자리에 좋은아침이라는 문자데이터가 남겨짐 / b라는 저장소에는 a 즉, 좋은아침이라는 문자데이터가 저장되어서 b는 좋은아침이 됨
+
+        function c(){
+            document.write("<p>c함수가 실행되었습니다.</p>")
+            return 1
+        }
+
+        function d(){
+            document.write("<p>d함수가 실행되었습니다</p>")
+            return 4
+        }
+        // alert(c()+d()) // =>'c를 실행한다, d를 실행한다'로 해석하기 (값은 5)
+
+        function e(n1,n2){
+            return n1+n2
+        }
+        // alert(e(e(1,2),4)) // => 3이 계산되어서 남음
+
+        function f(word){
+            document.write("<p>나는 "+word+"이 될거야.</p>")
+            return word
+        }
+        // f("슈퍼맨")?"그래그렇게해라":"안돼" //return이 word니깐 슈퍼맨이 문자데이터로 남게 됨 -> f("슈퍼맨")은 슈퍼맨이 맞으니깐 true, "그래그렇게해라"가 됨
+
+        function g(person){
+            document.write(`${person[0]}씨의 직업은 ${person[1]}이고 ${person[2]}세시군요.`)
+            return person
+        }
+        // alert(g(["정현진","강사",44])[1].length) //=> [1]이니깐 강사가 남음, .length는 숫자데이터 2로 계산됨
+
+        function h(person){
+            document.write(`${person[0]}씨의 직업은 ${person[1]}이고 ${person[2]}세시군요.`)
+            return {age:person[2],name:person[0],job:person[1]} //객체형태로 return하는 함수임
+        }
+        // alert(h(["이은지","학생",29]).job)
+
+        function getAver(arr){
+            //평균값을 계산해서 리턴하는 함수
+            //들어오는 데이터가 배열이라고 가정
+            return ((arr[0],arr[1].arr[2])/3).toFixed(3)
+        }
+        getAver([1,2,3])
+
+        function getAver2(arr,sosu){
+            let sum = 0
+            for(let i=0 ; i<arr.length ; i++){
+                sum += arr[i]
+            }
+            return (sum / arr.length).toFixed(sosu)
+        }
+        getAver2([10,20,30,40,50],2)
+
+        
+    </script>
+</body>
+</html>
