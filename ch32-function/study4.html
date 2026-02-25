@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>객체의 메서드 표현</title>
+</head>
+<body>
+    <script>
+        let ac = {
+            bodycolor : "흰색",
+            width: 60,
+            height: 200,
+            weight: 70,
+            brand: "carrier",
+            powerOn: function(){
+                alert("전원이 켜졌습니다.")
+            },
+            powerOff: function(){
+                alert("전원이 꺼졌습니다.")
+            },
+            temperature:25,
+            temperatureUp:function(){
+                alert("온도를 1도 올립니다.")
+                this.temperature+=1
+            },
+            temperatureDown:function(){
+                alert("온도를 1도 내립니다.")
+                this.temperature-=1
+            }
+        }
+        ac["bodycolor"]
+        ac.weight
+        //위에 두 개는 같은 표현 .을 사용하든 []를 사용하든
+        ac.powerOn()
+        ac.powerOff()
+        alert(ac.temperature)
+        ac.temperatureUp()
+        alert(ac.temperature)
+        ac.temperatureDown()
+        ac.temperatureDown()
+        ac.temperatureDown()
+        alert(ac.temperature)
+    </script>
+</body>
+</html>
