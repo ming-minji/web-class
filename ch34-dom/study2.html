@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom</title>
+</head>
+<body>
+    <h1>제목1</h1>
+    <p class="a">Lorem ipsum, dolor sit amet consectetur adipisicing elit. A dignissimos in esse asperiores nostrum, consequatur nemo recusandae modi, dolorem facilis obcaecati quisquam optio praesentium, numquam aperiam quo fugiat eaque ratione?</p>
+    <p class="a">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis laborum commodi eveniet mollitia, fugit modi similique corrupti accusamus nihil delectus quis id in cum ullam soluta facere dolorum neque maxime.</p>
+    <p class="a">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt fuga eos excepturi quam praesentium voluptas repellendus, sint facere iusto officia impedit voluptatem minima vitae reiciendis dolore repudiandae voluptate quis hic?</p>
+
+    <script>
+        let h1tag = document.querySelector("h1")  
+        // 얘네는 body태그 안에 있는 내용들을 싸악 훑어보고, 해당되는 내용이 있으면 그 즉시 종료됨
+        // 예를 들어서 p태그가 3개가 있는데 p태그를 적으면 1번째 p태그를 발견하자마자 그 즉시 끝나서 2, 3번째 p태그에는 효과가 적용이 안 됨
+        h1tag.style.color = "red"
+        h1tag.style.fontSize = "80px" //카멜케이스 적용
+        h1tag.style.textDecoration = "underline"
+        
+
+        let ptag = document.querySelectorAll(".a") //괄호 안에 들어가는건 css에서 적는 것처럼 적어도 됨 ex) .a>a / .a li img
+        // ptag[0].style.color = "green"
+        // ptag[1].style.color = "green"
+        // ptag[2].style.color = "green"
+        for(let i=0 ; i<ptag.length ; i++){
+            ptag[i].style.color = "green"
+        }
+        ptag.forEach(function(tag){
+            tag.style.color = "red"
+        })
+        // 괄호 안에는 동작형태가 들어가야함(익명함수 -> function(){}) / tag적힌 괄호는 이름을 아무거나 지정하면 되고 각각의 원소를 뜻함
+
+        ptag.forEach(tag=>{
+            tag.style.color = "blue"
+        }) 
+        // 위에랑 같은 건데 화살표 방식을 사용한 것임
+        // 매개변수가 하나라 소괄호 생략
+
+
+    </script>
+</body>
+</html>
