@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom의 메서드와 프로퍼티</title>
+</head>
+<body>
+    <h1>태그의 속성 편집하기</h1>
+    <p>태그가 갖고있는 속성 값을 설정하거나 가져올 수 있다.</p>
+    <figure>
+        <img class="img1" src="./img/강건희.png" alt="강건희">
+        <figcaption class="cap1">강건희</figcaption>
+    </figure>
+
+    <script>
+        //태그를 선택
+        let img1 = document.querySelector(".img1")
+        console.log(img1)
+        console.dir(img1)
+        let originalSrc = img1.getAttribute("src")
+        //src에 들어간 속성값을 불러오겠다~ => "./img/강건희.png"
+        console.log(originalSrc)
+        let originalAlt = img1.getAttribute("alt")
+        console.log(originalAlt)
+
+        let cap1 = document.querySelector(".cap1")
+        console.log(cap1.textContent)
+        // cap1.textContent = "<i>집가고싶다</i>"
+        cap1.innerHTML = "<i>집가고싶다</i>"
+        //스타일 적용할 땐 innerHTML 사용하는 거 추천
+    </script>
+
+
+    <h1>태그의 클래스 제어</h1>
+    <p>선택된 태그의 클래스를 추가하거나 삭제할 수 있다.</p>
+    <p class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti distinctio ad eligendi eveniet, nemo et? Similique, est debitis laborum sapiente quasi laboriosam itaque quisquam. Doloribus alias ullam tempora minus qui.</p>
+    <p class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti distinctio ad eligendi eveniet, nemo et? Similique, est debitis laborum sapiente quasi laboriosam itaque quisquam. Doloribus alias ullam tempora minus qui.</p>
+    <p class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti distinctio ad eligendi eveniet, nemo et? Similique, est debitis laborum sapiente quasi laboriosam itaque quisquam. Doloribus alias ullam tempora minus qui.</p>
+
+    <script>
+        let para = document.querySelector(".para") 
+        //한 개의 para클래스만 선택한거라서 클래스명이 para인 p태그가 여러 개라도 한 개만 적용됨
+        para.classList.add("on") 
+        //원조 클래스명 옆에 클래스 on을 추가한다는 뜻 -> class="para on"이 되는 것
+        // para.classList.remove("on") //on이라는 클래스를 지움
+
+        // let paras = document.querySelectorAll(".para") //이거는 여러 개 적용시키고 싶을 때 사용
+        // paras.forEach(tag=>{
+        //     tag.classList.add("on")
+        // })
+    </script>
+
+
+    <h1>태그의 포함관계를 사용하여 태그 선택하기</h1>
+    <ul class="list">
+        <li>1</li>
+        <li class="me">2</li>
+        <li>3</li>
+        <li>4</li>
+    </ul>
+
+    <script>
+        let ultag = document.querySelector(".list")
+        let litags = ultag.children
+        litags[3].style.color = "red"
+        let me = document.querySelector(".me")
+        me.parentElement.style.border = "2px solid green"
+        me.nextElementSibling.style.color = "blue"
+        me.previousElementSibling.style.color = "pink"
+        //previousElementSibling은 이전형제를 뜻함
+
+        me.parentElement.parentElement.children[1].style.backgroundColor = "pink"
+        me.parentElement.parentElement.children[0].textContent[0] // me의 부모의 부모의 첫번째 자식의 1번째 글자 -> "태"
+
+    </script>
+</body>
+</html>
