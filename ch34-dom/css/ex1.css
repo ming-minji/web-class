@@ -1,0 +1,35 @@
+img{max-width:100%}
+
+.popup{
+    border: 1px solid green;
+    position: fixed;
+    left: 200px;
+    top: 200px;
+    width: 300px;
+    background-color: #fff;
+}
+
+.popup-controler{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.popup-controler span{
+    cursor: pointer;
+    padding: 0.4rem 1rem;
+    border: 1px solid #000;
+}
+
+.popup{
+    transition: all 1s ease 0s;
+    opacity: 1;
+}
+
+.popup.hide{
+    opacity: 0;
+    pointer-events: none; 
+    /*태그가 마우스에도 반응하지 않도록 함 / pointer-events: none;을 안 하면 팝업창을 닫아도 그 자리에 그대로 남아있는 거라 커서를 가져다대면 손모양 커서로 계속 보임*/
+    transform: scale(1.5);
+
+}
