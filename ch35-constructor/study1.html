@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>생성자</title>
+</head>
+<body>
+    <h1>생성자 함수</h1>
+    <p>생성자 함수란? 객체를 생성하는 함수를 뜻한다.</p>
+
+    <script>
+        function Person(uname,uage){ //인자가 두 개인 매개변수
+            this.name = uname
+            this.age = uage
+            this.sayHello = function(){
+                alert(`안녕하세요 저는 ${this.name}입니다.`)
+            }
+        }
+
+        let person1 = new Person("너구리",30)
+        let person2 = new Person("다람쥐",20)
+        person1.sayHello()
+        person2.sayHello()
+        // let person1 = {name:"너구리",age:40,sayHello:function(){alert(`안녕하세요 저는 너구리입니다.`)}} 윗줄 풀어놓는 것
+    </script>
+</body>
+</html>

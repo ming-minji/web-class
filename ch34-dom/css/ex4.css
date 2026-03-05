@@ -1,0 +1,39 @@
+*{margin: 0; padding: 0;}
+ul{list-style: none;}
+
+.station{
+    width: 1500px;
+    height: 700px;
+    border: 10px solid #000;
+    margin: 40px auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.train{
+    width: 400%; /*4배 곱해서 나온 값*/
+    height: 100%;
+    display: flex;
+    transition: all 1s ease 0s;
+}
+
+.train li{
+    flex: 1;
+    height: 100%;
+    font-size: 100px;
+}
+
+.train li:nth-of-type(1){background-color: red;}
+.train li:nth-of-type(2){background-color: blue;}
+.train li:nth-of-type(3){background-color: green;}
+.train li:nth-of-type(4){background-color: gold;}
+
+.controler{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
