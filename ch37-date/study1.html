@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>date 객체 활용하기</title>
+</head>
+<body>
+    <h1>date객체</h1>
+    <p>date객체를 통하여 날짜 정보를 가져올 수 있다.</p>
+    <p id="clock">현재 2026년 3월 9일 9시 37분 10초입니다.</p>
+    <script>
+        const clock = document.querySelector("#clock")
+
+        setInterval(function(){
+            let today = new Date()
+            let year = today.getFullYear()
+            let hour = today.getHours()
+            let month = today.getMonth()
+            let monthArray = ["1월","2월","3월","4월","5월","6월","7월","8월","9월","10월","11월","12월"]
+            let date = today.getDate()
+            let minute = today.getMinutes()
+            let second = today.getSeconds()
+
+            clock.innerHTML = `현재 ${year}년 ${monthArray[month]} ${date}일 ${hour}시 ${minute}분 ${second}초입니다.`
+        },1000)
+
+        // console.log(hour)
+        // console.log(year)
+        // console.log(month) // console에 2가 뜨는데 그 이유는 0부터 카운트 되기 때문임
+        // console.log(monthArray[month])
+        // console.log(date)
+        // console.log(minute)
+        // console.log(second)
+    </script>
+</body>
+</html>

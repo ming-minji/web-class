@@ -1,0 +1,74 @@
+*{margin: 0; padding: 0;}
+
+.clock{
+    height: 100vh;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: blanchedalmond;
+}
+
+.clock.day{
+    background: url("../img/day.png") no-repeat 50% 50% / cover;
+}
+
+.clock.night{
+    background: url("../img/night.png") no-repeat 50% 50% / cover;
+}
+
+.mode{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 1.5rem;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.mode li{
+    padding: .5rem 2rem;
+    cursor: pointer;
+    border-radius: 100px;
+    
+}
+
+.clock.day .mode li{
+    background-color: rgba(255, 255, 255, 0.741);
+    color: #000;
+    border: 1px solid #fff;
+}
+
+.clock.night .mode li{
+    background-color: rgba(0, 0, 0, 0.741);
+    color: #fff;
+    border: 1px solid #454545;
+}
+
+.onday{
+    font-size: 2rem;
+}
+
+.ontime{
+    font-size: 10rem;
+}
+
+#time{
+    padding: 2rem;
+    border-radius: 20px;
+    backdrop-filter: blur(3px);
+}
+
+.clock.day #time{
+    background-color: rgba(255, 255, 255, 0.455);
+    border: 1px solid #fff;
+    color: #000;
+}
+
+.clock.night #time{
+    background-color: rgba(0, 0, 0, 0.455);
+    border: 1px solid #6a6a6a;
+    color: #fff;
+}
