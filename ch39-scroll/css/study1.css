@@ -1,0 +1,38 @@
+.box{
+    height: 5000px;
+    /* background-color: beige; */
+    padding-top: 200xp;
+}
+
+*{margin: 0; padding: 0;}
+header#scr{
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+
+header#scr.on{
+    background-color: lightcoral;
+}
+#current-count{
+    color: darkcyan;
+    font-weight: bold;
+}
+
+.rotate-box{
+    border: 1px solid #000;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    position: sticky;
+    left: 0;
+    top: 0;
+}
+
+body{
+    background: url(../img/bg-wave.png) repeat-x 0% 0%;
+}
